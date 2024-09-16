@@ -189,8 +189,15 @@ background-clip: text;
 
 #Skills_container{
     border: 1px solid red;
-    width: 70%;
-    min-width: 70%;
+    width: 100%;
+    min-width: 100%;
     height: 40rem;
 
+}
+
+.pg_heading{
+    width: 100vw;
+    font-family: Poppins;
+    font-size: 2rem;
+    font-weight: 700;
 }

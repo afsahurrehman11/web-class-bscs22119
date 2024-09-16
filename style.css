@@ -1,0 +1,206 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    background: #000;
+    color: white;
+    
+}
+
+nav{
+
+    background-color: black;
+    width: 100%;
+    height: 3.5rem;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    padding: 0.5rem;
+    padding-right: 1rem;
+    margin-top: 0.25rem;
+    
+}
+
+
+.nav-item {
+    border: 2px solid grey;
+    border-radius: 15px;
+    list-style-type: none; 
+    margin: 0.5rem;
+    height: 98%;
+    width: 6.5rem;
+    text-align: center;
+    font-family: sans-serif;
+    padding: 0.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: box-shadow 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+.nav-item:hover{
+    border-color: #00bfff; 
+    box-shadow: 0 0 15px 5px rgba(0, 191, 255, 0.5);
+}
+
+.nav-item>a:hover{
+    color: rgb(255, 231, 94);
+
+}
+
+
+
+.nav-item>a{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.05rem;
+
+}
+
+
+
+#grid_bg{
+    width: 100%;
+    height: 35rem;
+    z-index: -1;
+    margin-top: 2rem;
+    /* border: 2px solid rgb(0, 85, 255); */
+
+}
+
+
+.grid-container {
+    margin-top: 2rem;
+    width: 100vw;
+    height: 35rem;
+    background-color: black; 
+    background-image: 
+        linear-gradient(rgb(200, 200, 200) 1px, transparent 1px),
+        linear-gradient(90deg, rgb(200, 200, 200) 1px, transparent 1px);
+    background-size: 40px 40px; 
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+
+    gap: 3rem;
+}
+
+
+/* DOING THIS FOR THAT MAKSING CIRCLE  */
+.grid-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, transparent, black 70%);
+    pointer-events: none; 
+}
+
+.grid-items{
+    /* border: 2px solid red; */
+    z-index: 2;
+    background: transparent;
+}
+
+
+#intro{
+    padding-left: 0.2rem;
+    min-width: 25rem;
+    width: 30rem;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+
+    position: relative;
+    top:1rem;
+
+}
+
+
+
+#intro_title{
+    min-width: 90%;
+    width: 90%;
+    height: 48%;
+    min-height: 48%;
+    padding-top: 1.1rem;
+    background: inherit;
+    /* border: 2px solid gold; */
+    font-family: Poppins ;
+    font-size: 2.3rem;
+    font-weight: 700;
+    padding-left: 1rem;
+    padding-bottom: 0rem;
+    background: transparent;
+    background: linear-gradient(to bottom, white 30%, #d9d9d9 50%, #808080 70%, black 100%); /* Increased white part to 30% */
+-webkit-background-clip: text; 
+color: transparent; 
+background-clip: text;
+
+    
+}
+
+
+#intro_des{
+    /* border: 2px solid gold; */
+    font-family: Poppins ;
+    background: inherit;
+
+    min-width: 95%;
+    width: 95%;
+    min-height: 40%;
+    padding-top: 0rem;
+    color: rgb(255, 233, 110);
+    font-size: 1.1rem;
+    padding-left: 1rem;
+
+
+}
+
+#pic{
+    min-width: 15rem;
+    width: 15rem;
+
+    min-height: 10rem;
+    height: 17rem;
+    max-height: 20rem;
+    /* padding-top: 1rem; */
+    overflow: hidden;
+    border-radius: 50%;
+    /* border: 3px solid silver; */
+
+}
+
+#pic>img{
+    height: 17rem;
+    width: auto;
+    background-color: transparent;
+
+}
+
+
+/* <!-- ---------------------------------------------------------- --> */
+/* <!-- Skills --> */
+/* <!-- ---------------------------------------------------------- --> */
+
+
+#Skills_container{
+    border: 1px solid red;
+    margin: 0px;
+    padding: 0%;
+    width: 100%;
+    min-width: 100%;
+    height: 40rem;
+
+}

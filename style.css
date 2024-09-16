@@ -7,6 +7,11 @@
     
 }
 
+
+html {
+    font-size: 100%; /* Default font size (16px) */
+}
+
 nav{
 
     background-color: black;
@@ -359,6 +364,9 @@ body {
   }
   
   @media screen and (max-width: 768px) {
+    body{
+        font-size: 50%;
+    }
     .hackathon-entry {
       flex-direction: column;
     }
@@ -371,6 +379,34 @@ body {
     }
   }
   
+
+
+  @media (max-width: 1100px) {
+    html {
+        font-size: 80%; /* Default font size (16px) */
+    }
+    
+}
+
+  @media (max-width: 800px) {
+    html {
+        font-size: 60%; /* Default font size (16px) */
+    }
+    
+}
+  @media (max-width: 500px) {
+    html {
+        font-size: 50%; /* Default font size (16px) */
+    }
+    
+}
+  @media (max-width: 250px) {
+    html {
+        font-size: 35%; /* Default font size (16px) */
+    }
+    
+}
+
 
 
 

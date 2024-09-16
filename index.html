@@ -21,13 +21,14 @@
 <body>
 
     <nav>
-        <div class="nav-item"><a href="#">Home</a></div>
-        <div class="nav-item"><a href="#">Skills</a></div>
-        <div class="nav-item"><a href="#">Education</a></div>
-        <div class="nav-item"><a href="#">Experience</a></div>
-        <div class="nav-item"><a href="#">Projects</a></div>
-        <div class="nav-item"><a href="#">Contact</a></div>
-        <div class="nav-item"><a href="#">Resume</a></div>
+        <div class="nav-item"><a href="#intro">Home</a></div>
+        <div class="nav-item"><a href="#skills">Skills</a></div>
+        <div class="nav-item"><a href="#education">Education</a></div>
+        <div class="nav-item"><a href="#experience">Experience</a></div>
+        <div class="nav-item"><a href="#projects">Projects</a></div>
+        <div class="nav-item"><a href="#hackathons">Hackathons</a></div>
+        <div class="nav-item"><a href="#contact">Contact</a></div>
+        <div class="nav-item"><a href="res.pdf" target="_blank">Resume</a></div>
     </nav>
 
     <div class="grid-container">
@@ -48,43 +49,14 @@
             <img src="me.png" alt="Profile Pic" srcset="">
         </div>
 
-
     </div>
 
-
-    <!-- ---------------------------------------------------------- -->
-    <!-- Skills -->
-    <!-- ---------------------------------------------------------- -->
-     <!-- <div class="pg_heading">
-        Skills
-     </div>
-    <div id="Skills_container">
-        <div class="SKill_item"></div>
-        <div class="SKill_item"></div>
-        <div class="SKill_item"></div>
-        <div class="SKill_item"></div>
-        <div class="SKill_item"></div>
-        <div class="SKill_item"></div>
-        <div class="SKill_item"></div>
-        <div class="SKill_item"></div>
-        <div class="SKill_item"></div>
-    </div> -->
-
-
-   
     <div class="poetry">
-        <p style="font-size: 18px; text-align: center; direction: rtl; font-family: 'Jameel Noori Nastaleeq', serif;">
+        <p style="font-size: 2rem; text-align: center; direction: rtl; font-family: 'Jameel Noori Nastaleeq', serif;">
             دل ہی تو ہے نہ سنگ و خشت، درد سے بھر نہ آئے کیوں <br>
             روئیں گے ہم ہزار بار، کوئی ہمیں ستائے کیوں
         </p>
     </div>
-    
-
-
-
-
-
-
 
     <div class="section" id="skills">
         <h2 class="section-title">Skills</h2>
@@ -115,16 +87,16 @@
             </ul>
           </div>
         </div>
-      </div>
-      
-      <div class="section" id="education">
+    </div>
+
+    <div class="section" id="education">
         <h2 class="section-title">Education</h2>
         <ul class="bulleted-list">
           <li><strong>BSCS from ITU</strong> (2022-2026)</li>
         </ul>
-      </div>
-      
-      <div class="section" id="experience">
+    </div>
+
+    <div class="section" id="experience">
         <h2 class="section-title">Experience</h2>
         <ul class="bulleted-list">
           <li><strong>DigiFloat</strong> (June 2024 - Aug 2024) - Skills: Cloud Computing, Data Engineering, Microsoft Azure, Generative AI, Python with PySpark</li>
@@ -133,12 +105,17 @@
           <li><strong>Campus Ambassador, Search O Pal</strong> (Jun 2024 – present) - Lahore, Pakistan</li>
         </ul>
 
-        <div class="posts">
-            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7237113673725431809" height="628" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+        <div class="posts" style="width: 100%; max-width: 40rem; margin: 0 auto;">
+            <iframe 
+                src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7237113673725431809" 
+                style="width: 100%; height: 40rem; border: none;" 
+                allowfullscreen 
+                title="Embedded post">
+            </iframe>
         </div>
-      </div>
-      
-      <div class="section" id="projects">
+    </div>
+
+    <div class="section" id="projects">
         <h2 class="section-title">Projects</h2>
         <ul class="bulleted-list">
           <li><strong>Track Tracer</strong> - Music app with playlist creation and artist/album exploration. MERN stack: MongoDB, Node.js, Express</li>
@@ -148,10 +125,9 @@
           <li><strong>Excel-Lite</strong> - Excel-like app using C++ and SFML for UI</li>
           <li><strong>2D C++ Games</strong> - Snake game, Solitaire, Shogi, Ludo, Chess: SFML for the UI</li>
         </ul>
-      </div>
+    </div>
 
-
-      <div class="section" id="hackathons">
+    <div class="section" id="hackathons">
         <h2 class="section-title">Hackathons</h2>
         <div class="hackathon-entry">
           <div class="hackathon-info">
@@ -163,10 +139,9 @@
             Your browser does not support the video tag.
           </video>
         </div>
-      </div>
-      
-      
-      <div class="section" id="contact">
+    </div>
+
+    <div class="section" id="contact">
         <h2 class="section-title">Contact</h2>
         <div class="contact-info">
           <ul class="bulleted-list">
@@ -183,31 +158,8 @@
             </li>
           </ul>
         </div>
-      </div>
-      
+    </div>
 
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      <script>
-        function openResume() {
-          window.open('res.pdf', '_blank');
-        }
-      </script>
-      
 </body>
 
 </html>

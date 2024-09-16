@@ -187,7 +187,7 @@ background-clip: text;
 /* <!-- ---------------------------------------------------------- --> */
 
 
-#Skills_container{
+/* #Skills_container{
     border: 1px solid red;
     width: 100%;
     min-width: 100%;
@@ -196,8 +196,183 @@ background-clip: text;
 }
 
 .pg_heading{
-    width: 100vw;
+    width: 98.9vw;
     font-family: Poppins;
     font-size: 2rem;
     font-weight: 700;
-}
+    margin: 2rem 0rem;
+    border: 1px solid red;
+    color: silver;
+    text-align: center;
+} */
+
+
+
+
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+  
+  .section {
+    padding: 2rem 1rem;
+    margin: 0 auto;
+    max-width: 1000px;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    color: gold;
+    text-align: center;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    border-bottom: 2px solid lightblue;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+  }
+  
+  .bulleted-list {
+    list-style-type: disc;
+    margin-left: 2rem;
+    font-size: 1.2rem;
+  }
+  
+  .bulleted-list li {
+    margin-bottom: 0.8rem;
+    transition: color 0.3s ease;
+  }
+  
+  /* Highlight names of experiences, projects, etc. */
+  strong {
+    color: gold;
+    font-weight: bold;
+  }
+  
+  /* Hover effect for project names */
+  strong:hover {
+    color: lightblue;
+    text-shadow: 0 0 8px lightblue;
+  }
+  
+  .bulleted-list li:hover {
+    color: lightblue;
+    text-shadow: 0 0 8px lightblue;
+  }
+  
+  .skills-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  .hard-skills, .soft-skills {
+    flex-basis: 45%;
+  }
+  
+  h3 {
+    font-size: 1.8rem;
+    color: gold;
+    margin-bottom: 1rem;
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 768px) {
+    .skills-container {
+      flex-direction: column;
+    }
+  
+    .hard-skills, .soft-skills {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .section-title {
+      font-size: 2rem;
+    }
+  
+    .bulleted-list {
+      margin-left: 1rem;
+    }
+  }
+  
+
+
+  .resume-button {
+    background-color: gold;
+    color: black;
+    font-size: 1.2rem;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .resume-button:hover {
+    background-color: lightblue;
+    color: black;
+    text-shadow: 0 0 8px lightblue;
+  }
+  
+  .contact-info a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .contact-info a:hover {
+    color: lightblue;
+    text-shadow: 0 0 8px lightblue;
+  }
+  
+
+
+
+  .hackathon-entry {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 1.5rem;
+  }
+  
+  .hackathon-video {
+    width: 40rem;
+    height: 20rem;
+    border: 2px solid gold;
+    border-radius: 10px;
+    margin-left: 15rem;
+  }
+  
+  .hackathon-info {
+    color: white;
+  }
+  
+  .highlight {
+    color: gold;
+    font-size: 1.5rem;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .hackathon-entry {
+      flex-direction: column;
+    }
+  
+    .hackathon-video {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+
+
+
+
+
+
+

@@ -346,7 +346,7 @@ body {
     height: 20rem;
     border: 2px solid gold;
     border-radius: 10px;
-    margin-left: 15rem;
+    margin-left: 10rem;
   }
   
   .hackathon-info {
@@ -366,6 +366,8 @@ body {
     .hackathon-video {
       width: 100%;
       height: auto;
+      width: 20rem;
+        height: 10rem;
     }
   }
   

@@ -80,3 +80,63 @@ const person =
         }
     ]
 };
+
+
+
+document.getElementById("intro_title").textContent = person.name;
+
+
+document.getElementById("intro_des").textContent = person.description;
+
+const hardSkillsList = document.querySelector("#skills .hard-skills .bulleted-list");
+
+person.hardSkills.forEach(skill => {
+    const li = document.createElement("li");
+    li.textContent = skill;
+    hardSkillsList.appendChild(li);
+});
+
+const softSkillsList = document.querySelector("#skills .soft-skills .bulleted-list");
+
+
+person.softSkills.forEach(skill => {
+    const li = document.createElement("li");
+    li.textContent = skill;
+    softSkillsList.appendChild(li);
+});
+
+
+
+const educationList = document.querySelector("#education .bulleted-list");
+const eduLi = document.createElement("li");
+eduLi.innerHTML = `<strong>${person.education}</strong>`;
+
+educationList.appendChild(eduLi);
+
+
+const experienceList = document.querySelector("#experience .bulleted-list");
+
+person.experience.forEach(job => 
+{
+    const li = document.createElement("li");
+    li.innerHTML = `<strong>${job.title}</strong> (${job.period}): ${job.skills || ''}`;
+    experienceList.appendChild(li);
+});
+
+const projectsList = document.querySelector("#projects .bulleted-list");
+person.projects.forEach(project => {
+    const li = document.createElement("li");
+    li.innerHTML = `<strong>${project.title}</strong>: ${project.description}`;
+    projectsList.appendChild(li);
+});
+
+const hackathonInfo = document.querySelector("#hackathons .hackathon-info h3");
+
+hackathonInfo.textContent = person.hackathons[0].name;
+
+const hackathonParagraph = document.querySelector("#hackathons .hackathon-info p");
+hackathonParagraph.textContent = person.hackathons[0].organization;
+
+function openResume() {
+    window.open("res.pdf", "_blank");
+}
